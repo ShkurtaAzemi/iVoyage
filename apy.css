@@ -1,0 +1,130 @@
+@spacing: 1em; // 16px
+@alphaA: 0.4;
+@color1D: hsl(0, 53%, 45%);
+@color1E: hsl(0, 60%, 62%);
+@color0C: hsl(0, 0%, 53%);
+@color0D: hsl(0, 0%, 66%);
+@color0E: hsl(0, 0%, 85%);
+@color0F: hsl(0, 0%, 93%);
+@color-border:  @color0F;
+
+/* -- LESS Mixin -- */
+.corners(@radius) {
+	-webkit-border-radius: 	@radius;
+	-moz-border-radius: 	@radius;
+	border-radius: 			@radius;
+}
+.rounded-corners {
+	.corners(7px);
+}
+.borderStandard {border: 1px solid @color-border;}
+.borderBox {
+	border: 2px solid @color1E;
+	.rounded-corners;
+}
+/*------------------------------------------*/
+body {
+ 
+ 
+  margin: 0 1rem;
+}
+* {
+  line-height: 1.5em;
+  box-sizing: border-box;
+  font: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+	line-height: 1.3;
+	font-weight: 700;
+	margin: @spacing 0;
+}
+h6 {font-size: 1em;}
+h5 {font-size: 1.25rem;}
+h4 {font-size: 1.375rem;}
+h3 {font-size: 1.6rem;}
+h2 {font-size: 1.9rem;}
+h1 {
+	font-size: 2.2rem;
+	text-transform:uppercase;
+}
+
+fieldset {
+	margin: (1.5*@spacing) 0;
+	padding: @spacing (2*@spacing);
+	position: relative;
+	.rounded-corners;
+  border: 2px solid @color1E;
+	fieldset {
+		border: 0;
+		padding: 0;
+	}
+}
+form > fieldset > legend {
+	text-rendering: optimizeLegibility;
+	font-size: 1.6em;
+	font-weight: bold;
+    line-height: 1;
+    opacity: @alphaA;
+    position: absolute;
+	position: relative;
+	padding: 0 (0.4*@spacing);
+}
+.form-field {
+	margin: 0;
+	clear: both;
+}
+label {
+	position: relative;
+	float: left;
+	width: 25%;
+	min-width: 12em;
+	margin-right: 1.3%;
+	text-align: right;
+  line-height: 1.5rem;
+	padding: 0;
+}
+.required {
+	font-weight: 700;
+	line-height: 0;
+	position: absolute;
+	top: 0.5em;
+}
+input, textarea, select, progress, meter {
+    vertical-align: top;
+    width: 50%;
+    min-width: 15em;
+	transition: all 0.3s ease-in-out;
+  	line-height: 1.5rem;
+}
+input, textarea, select, progress { border: 1px solid @color0E;}
+input:focus,
+textarea:focus,
+select:focus,
+input:active,
+textarea:active,
+select:active {
+    border-color: @color0D;
+    box-shadow: 0 0 3px @color0C;
+}
+.radio-outer > *, .checkbox-outer > * {
+	float: none;
+	width: auto;
+	min-width: auto;
+	vertical-align: middle;
+	line-height: 1.5;
+	display: inline;
+}
+.radio-outer legend, .checkbox-outer legend {
+	font-weight: 700;
+}
+.radio-outer label, .checkbox-outer label {
+	margin-right: 2*@spacing;
+	text-align: left;
+}
+.radio-outer input, .checkbox-outer input {
+	text-align: right;
+	margin-right: 0.5*@spacing;
+	margin-left: 0;
+	width: 1.2*@spacing;
+}

@@ -1,0 +1,209 @@
+
+
+
+
+.menu{
+      width: 100%;
+      height: 30;
+      font-size: 0.7em;
+      font-family: Lato, Helvetica, Arial, sans-serif;
+       background: white;
+  color: rgb(13, 26, 38);
+  position: fixed;
+  top: 0;
+  height: 70px;
+  line-height: 70px;
+ letter-spacing: 1px;;
+  z-index: 10;
+    text-transform: uppercase;
+    display: inline-block;
+  float: center;
+  margin-right:50%;
+  list-style: none;
+  margin-top: 13px;
+
+    margin-left: 10%;
+  padding: 0 4px;
+text-decoration: none;
+
+}
+
+   .menu a {
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+    li{
+        display: inline-block;
+    }
+.menu li a:hover{
+    color:#786a93;
+
+
+}
+
+.menu li a.active:hover,
+.menu li a.active:visited,
+.menu li a.active:active,
+.menu li a.active:link
+{
+
+    color:#786a93;
+}
+    .menu li {
+
+        margin-left: 10px;
+    }
+
+
+
+ .logo
+    {
+
+        float: left;
+        display: block;
+        margin-left:50px;
+        font-size: 1.5em;
+         width:250px;
+         height: 90px;
+        border: none;
+}
+
+
+
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+        .monuments{
+
+             background:
+    url("monument.jpg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 15px 30px 85px;
+  position: relative;
+  float: left;
+
+        }
+
+
+    .hotels {
+  background:
+    url("iVoyage/Hotels/semitronix.jpg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 85px 30px 15px;
+  position: relative;
+  float: left;
+
+}
+ .tourguides{
+
+             background:
+    url("njerivogel.jpeg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 15px 30px 85px;
+  position: relative;
+  float: left;
+
+        }
+
+  .festival {
+  background:
+    url("event.jpg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 85px 30px 15px;
+  position: relative;
+  float: left;
+
+}
+
+
+ .activities{
+
+             background:
+    url("hiki.jpg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 15px 30px 85px;
+  position: relative;
+  float: left;
+
+        }
+
+  .culture {
+  background:
+    url("c.jpg");
+  background-size: cover;
+  width: 564px;
+  height: 376px;
+  margin: 30px 85px 30px 15px;
+  position: relative;
+  float: left;
+
+}
+
+
+
+        .mid h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+            border: 3px solid white;
+           padding: 10px 20px 10px 20px;
+            cursor: pointer;
+
+}
+        .mid p{
+            font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+
+
+        }
+
+.cover{
+
+        background:url("coveryy.jpg") top center no-repeat,
+            url("coveryy.jpg") bottom center no-repeat;
+             background-position: fixed;
+    background-repeat: no-repeat;
+           width: 100%;
+             height:100%;
+            background-size: cover ;
+             overflow:hidden;
+
+
+        }
+
+
+
+
+
+
+
+
+}

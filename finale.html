@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	
+    <link rel="stylesheet" type="text/css" href="finale.css">
+    
+    <link rel="stylesheet" type="text/css" href="mystyle1.css">
+   
+</head>
+    <body>
+<nav>
+    <div>
+ <li class="logo"><img src="logo2.png" width="250" height="70" /></li>
+<ul class="menu">
+   
+    <li class="active"><a>Home</a></li>
+    <li><a href="Monument.html"></a>monuments</li>
+    <li><a href="Hotels.html"></a>Hotels</li>
+<li> <a href="travelguide.html"> </a>Tour Guides</li>
+    <li><a href="EventsAndFestivals.html"></a>Events</li>
+    <li><a href="activities.html"></a>Activities</li>
+    <li><a href="culture.html"></a>Culture</li>
+</ul>
+    </div>
+    </nav>
+
+  
+ 
+<script type="text/javascript">
+
+var make_button_active = function()
+{
+  //Get item siblings
+  var siblings =($(this).siblings());
+
+  //Remove active class on all buttons
+  siblings.each(function (index)
+    {
+      $(this).removeClass('active');
+    }
+  )
+
+
+  //Add the clicked button class
+  $(this).addClass('active');
+}
+
+//Attach events to menu
+$(document).ready(
+  function()
+  {
+    $(".menu li").click(make_button_active);
+  }  
+)
+
+</script>
+    
+    
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div id="korniza">
+<table cellspacing="20" align="center">
+<tr text-align="center">
+<th> About us </th>
+<th> Contacts </th>
+<th> Follow us around the web </th>
+</tr>
+<tr>
+<td > <span style="color:#3a3333">
+Dear travelers, this webpage is made to help you find the best places to visit in Kosovo. This is the first step you take on
+getting to know the world that Kosovo has to offer. All around sightseeing, from the beautiful mountains to the waterfalls and
+the vintage cities. Amazing christal caves or maybe authentic albanian food at amazing restaurants. From the 5 star luxory hotels to apartment hotels with decent prices and magnificent views. Tour guides only in your service and travel network lines to make your travel easier and more enjoyable. 
+Kosovo, the <i>voyage</i> you will never forget and memories you'd want to go back over and over again.</span></td>
+    <td> <address> <a href="mailto:"> ivoyagekos@gmail.com</a></address><br/>+386 49 123 456 </td>
+<td> <a href="https://www.facebook.com/iVoyageKosova/" target="_blank"><img src="iVoyage/fb1.jpg" onmouseover="this.src='iVoyage/fb.jpg'" onmouseout="this.src='iVoyage/fb1.jpg'"></a>
+ <a href="https://twitter.com/iVoyageKos" target="_blank"><img src="iVoyage/tw1.jpg" onmouseover="this.src='iVoyage/tw.jpg'" onmouseout="this.src='iVoyage/tw1.jpg'"></a>
+<a href="https://www.instagram.com/ivoyagekosova/?hl=en" target="_blank"> <img src="iVoyage/ins1.jpg" onmouseover="this.src='iVoyage/ins.jpg'" onmouseout="this.src='iVoyage/ins1.jpg'"></a></td>
+</tr>
+<tr> 
+<td colspan="3" align="center"><u>Copyright</u> &copy; iVoyage, <i> All rights reserved</i></td>
+ </tr>
+ 
+</table>
+</div>    
+<script>
+
+    let menuIcon = document.querySelector('.menuIcon');
+    let nav = document.querySelector('.overlay-menu');
+
+    menuIcon.addEventListener('click', () => {
+        if (nav.style.transform != 'translateX(0%)') {
+            nav.style.transform = 'translateX(0%)';
+            nav.style.transition = 'transform 0.2s ease-out';
+        } else { 
+            nav.style.transform = 'translateX(-100%)';
+            nav.style.transition = 'transform 0.2s ease-out';
+        }
+    });
+
+    let toggleIcon = document.querySelector('.menuIcon');
+
+    toggleIcon.addEventListener('click', () => {
+        if (toggleIcon.className != 'menuIcon toggle') {
+            toggleIcon.className += ' toggle';
+        } else {
+            toggleIcon.className = 'menuIcon';
+        }
+    });
+</script>
+    </body>
+</html>

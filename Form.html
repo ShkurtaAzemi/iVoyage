@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+ 
+    
+    </head>
+    <style>
+        .yllka{
+            position:relative;
+            background: white;
+            max-width: 50%;
+            width: 100%;
+            border-top:5px solid #33b5e5;
+            -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            margin:0 auto;
+            
+            
+        }
+        
+        .yllka .toggle {
+            cursor: pointer;
+            position: absolute;
+            top:-0;
+            right:-0;
+            background: #33b5e5;
+            width:30px;
+            height:30px;
+            margin:-5px 0 0;
+            color:white;
+            font-size: 12px;
+            line-height: 30px;
+            text-align: center;
+            
+            
+            
+            
+        }
+        
+        .yllka .toggle .shkurta{
+            position: absolute;
+            top:5px;
+            right:-65px;
+            display: block;
+            background: rgba(0,0,0,0.6);
+            width: auto;
+            padding: 5px;
+            font-size: 10px;
+            line-height: 1;
+            text-transform: uppercase;
+            
+            
+
+        }
+        
+        
+        .yllka .toggle .shkurta:before {
+            content: '';
+            position: absolute;
+            top:5px;
+            left:-5px;
+            display: block;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid rgba(0,0,0,0.6);
+            
+        
+            
+        }
+        
+        .yllka .form {
+            display: none;
+            padding: 40px;
+            
+            
+            
+        }
+        
+        .yllka .form:nth-child(2) {
+            display: block;
+            
+            
+        }
+        .yllka h2{
+            
+            
+            margin: 0 0 20px;
+            color:#33b5e5;
+            font-size: 18px;
+            font-weight:400;
+            line-height: 1;
+            
+        }
+        
+        .yllka input {
+             outline: none;
+            display: block;
+            width:100%;
+            border: 1px solid #d9d9d9;
+            margin:0 0 20px;
+            padding: 10px 15px;
+            -webkit-box-sizing: border-box;
+            font-weight: 400;
+            -webkit-transition: 0.3s ease;
+            
+    
+        }
+        .yllka input:focus{
+            
+            border: 1px solid #33b5e5;
+            color:#333333;
+            
+        }
+        
+        .yllka button{
+            cursor: pointer;
+            background: #33b5e5;
+            width: 100%;
+            border: 0 ;
+            padding: 10px 15px;
+            color:white;
+             -webkit-transition: 0.3s ease;
+                
+        }
+        
+        .yllka button:hover{
+            
+            background: #178ab4;
+            
+        }
+        
+        .yllka .cta{
+            
+            background: #f2f2f2;
+            width: 100%;
+            padding: 15px 40px;
+             -webkit-box-sizing: border-box;
+            color:#666666;
+            font-size: 12px;
+            text-align: center;
+            
+            
+        }
+        
+        .yllka .cta a{
+            color:#333;
+            text-decoration: none;
+        }
+    
+    </style>
+<body>
+    <div  class="yllka">
+    <div class="toggle">
+        <i class="fa fa-times fa-pencil"></i>
+        <div class="shkurta">
+        Click me
+        </div>
+        
+        </div>
+    
+        <div class="form">
+        <h2> Login to your account </h2>
+            <form>
+            
+            <input type="email" id="field-email" placeholder="Email" />
+            <input type="password" class="password" id="field-password" required placeholder="Password input" />
+            <button>Login</button>
+            </form>
+        </div>
+        <div class="form">
+        <h2> Create an account </h2>
+            <form>   
+      <label for="field-file">Image Input:</label>
+      <input type="file" class="file" id="field-file" multiple />
+    <input type="text" id="name" placeholder="First Name" maxlength="15" autofocus
+	 required name="emri">
+     <input type="text" id="surname" placeholder="Last Name" maxlength="15" autofocus
+	name="mbiemri" />
+      <input type="password" class="password" id="field-password" required placeholder="Password" />
+      <label for="text_area">Birthday:</label>
+    <input type="date" id="text_field_readonly" name="Ditelindja" min="1997-01-01"/>
+      <input type="email" id="field-email" placeholder="Email" />
+      <input type="tel" id="tel" placeholder="Telephone Number" name="usrtel" required pattern="[0-9]{9}" />
+        <label>Sex: </label>
+        <input type="radio" class="radio" name="radio_button" value="male" /><label>Male</label>
+        <input type="radio" class="radio" name="radio_button" value="Female" /><label>Female</label>
+        <label>The languages you speak: </label>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /><code>Albanian</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /><code>English</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /><code>French</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" /><code>Turkish</code>
+        <label>Tour Guide Of: </label>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /><code>Pristina</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /><code>Mitrovica</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /><code>Peja</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_4" /><code>Prizreni</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_5" /><code>Ferizaji</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_6" /><code>Gjilani</code>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_7" /><code>Gjakova</code>
+        <label>Transport included: </label>
+        <input type="radio" class="radio" name="radio_button" value="Yes" /><label>Yes</label>
+        <input type="radio" class="radio" name="radio_button" value="No" /><label>No</label>
+      <input type="number"  min="0" max="300" step="10" value="0" placeholder="Salary" />
+   
+	
+  <input type="text" value= "" placeholder="Input years of experience"/>
+    <textarea id="text_area" placeholder="Say something about your experience"></textarea>
+         
+            </form>
+        
+        </div>
+        <div class="cta"> <a href="#">
+            Forgot your password?</a>
+        </div>
+    </div>
+       <script>
+    $('.toggle').click(function(){$ (this).children('i').toggleClass('fa-pencil');
+                                 $('.form').animate(
+                                     {
+                                     height:"toggle",
+                                     'padding-top':'toggle',
+                                     'padding-bottom':'toggle',
+                                     opacity:'toggle'
+                                 },"slow");
+                                 
+                                 
+                                 });
+    
+    
+    
+    </script>
+    </body>    
+    
+    
+</html>

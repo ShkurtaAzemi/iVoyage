@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style>
+  .menu{
+      width: 100%;
+      height: 25; 
+      font-size: 0.7em;
+      font-family: Lato, Helvetica, Arial, sans-serif;
+       background: white;
+  color: rgb(13, 26, 38);
+  position: fixed;
+  top: 0;
+  height: 70px;
+  line-height: 70px;
+ letter-spacing: 1px;;
+  z-index: 10;
+    text-transform: uppercase;
+    display: inline-block;
+  float: center;
+  margin-right:50%;
+  list-style: none;
+  margin-top: 13px;
+  
+    margin-left: 10%;
+  padding: 0 4px;}
+    
+    
+    
+    
+    li{
+        display: inline-block;
+    }
+  .menu li:hover, .menu li.active {
+        color:blueviolet;
+      cursor: pointer;
+    }
+    .menu li {
+    
+        margin-left: 10px;
+    }
+    
+.logo 
+    {
+  float: left;
+  margin-left:5%;
+  font-size: 1.5em;
+  height: 60px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+    <div>
+ <li class="logo"><img src="logo2.png" width="250" height="70" /></li>
+<ul class="menu">
+   
+    <li class="active"><a>Home</a></li>
+    <li><a>monuments</a></li>
+<li>Hotels</li>
+<li>Tour Guides</li>
+    <li>Events</li>
+    <li>Activities</li>
+    <li>Culture</li>
+</ul>
+    </div>
+    </nav>
+<script type="text/javascript">
+
+var make_button_active = function()
+{
+  //Get item siblings
+  var siblings =($(this).siblings());
+
+  //Remove active class on all buttons
+  siblings.each(function (index)
+    {
+      $(this).removeClass('active');
+    }
+  )
+
+
+  //Add the clicked button class
+  $(this).addClass('active');
+}
+
+//Attach events to menu
+$(document).ready(
+  function()
+  {
+    $(".menu li").click(make_button_active);
+  }  
+)
+
+</script>
+</body>
+
+</html>
